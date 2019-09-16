@@ -1,0 +1,34 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRAIx9Zc+JSPGI5Qgd1rMrZbIwDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkNTg0Y2E2ZDctNWMxNi00ZTIxLTlmYzEtODczZmY2ZjRkMjQ5
+    MB4XDTE5MDkxNjE4MjQwNVoXDTI0MDkxNDE5MjQwNVowLzEtMCsGA1UEAxMkNTg0
+    Y2E2ZDctNWMxNi00ZTIxLTlmYzEtODczZmY2ZjRkMjQ5MIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEAorHpqN/Er5VRz0JCvx2487w4ntqAaqzpW2mGqkAt
+    stS3MuTNpDV+NqzWG7nOGpq7vA8e4SucsXu3pTNdwa9q7NlFe8FCpBBGnhg1rq3c
+    AVKEm6qrl3P2xBjzFdZPwG+D3l0+dPOV9Ikdntc5dT5XRK+NnMea2VqSPNX93wwu
+    /l3ecxLHMxF5n7gYF98wToAjHI0MDh9bfFrYfpq3ZPQkbVHaV7EIFW2Pp0d2KIb6
+    FPUWWHz0NYkLT8ujMRI6vvBxyd+Bc9zXfupjWMS6cG9hFaGHh+Rmu96TNlyjJNOS
+    diUdm4eVlR0ylq2QxPY6f6SHztDD29rAhz+LXYoCkQLC6QIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    gv2XhGo9kVrURL6r+4A2V4XWr5uedhFBIXJWqW3b/aB6uTwfSrzcE94soHSAFky3
+    34XpvwPHMGVmXOREr5C4dOgowMOSIMPnvnylFxFUOZIca5KecoHCDftSlvrsGzaM
+    hTSVdqOUPigiSOYKUzrqCsskc7ml5TgBdSle9I+/9UqiMtxxaumZnYdt7BmdTAkz
+    ofEikIWBGESdH0suMx71bB9vFwY0KsbWkDD+zQe6Jc5ClEeHcGZ1aq0mjxy0c/fa
+    TTyTu4vA+YOaiN0XlNulqF5LgNxmIJICU75m0FzfXxcWFXdGyHBXKI3gor7UceBM
+    w3CkQNCJxf7E8YV5x2lEqA==
+    -----END CERTIFICATE-----
+  clusterName: jenkins-cluster
+  jx-install-version: 2.0.721
+  kubeProvider: gke
+  projectID: leap-0123
+  secretsLocation: vault
+  server: https://35.203.119.171
+  systemVaultName: jx-vault-jenkins-clust
+  zone: northamerica-northeast1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
